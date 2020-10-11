@@ -1,4 +1,13 @@
 h1{
     text-align: center;
-    color:lightseagreen;
+    color:steelblue;
+}
+h2{
+    text-align: center;
+}
+.jumbotron{
+    background-color: gainsboro;
+}
+.text-center{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
