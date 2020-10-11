@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <title>RESIZE ME!</title>
+        <!--  LINKS, STYLES and SCRIPTS  -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -9,22 +10,19 @@
         <script src="index.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
+        <!-------------------------------->
     </head>
     <body>
-        <h1> This is a start, now let's get bootstrap going </h1>
-        <h2><small>Subtitle is something to take in account</small></h2>
-
         <div class="jumbotron">
-            <h2>HEYO</h2>
-            <p class="text-center">text</p>
+            <h1>BOOTSTRAP GITHUB REPO GREPPER</h1>
+            <p class="text-center" style="color:gray; font-size:x-large;"><bold>Github Account Grepper, search for any valid user <br>we get you his public repositories</bold></p>
         </div>
         <div class="container">
-            <button onClick="JavaScript:Clicked()" type="button" class="btn" role="button" id="btn">CLICK ME</button>
-            <button onClick="JavaScript:Clicked()" type="button" class="btn" role="button" id="btn-hid">CLICK ME</button><br>
-            <div class="alert alert-info alert-dismissible fade in" role="alert" id="alert-info" hidden>
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>YOU FOUND ME!</strong>
-            </div>
+            <form class="form-inline" action="/action-page.php">
+                <label for="user">Search for a user:</label><br>
+                <input type="text" clas="form-control" value="Input a valid name..." id="user-inp">
+                <button type="button" class="btn" id="btn">Search</button>
+            </form>
         </div>
     </body>
 </html>
