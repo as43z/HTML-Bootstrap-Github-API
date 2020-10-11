@@ -20,8 +20,41 @@
         <div class="container">
             <form class="form-inline" action="/action-page.php">
                 <label for="user">Search for a user:</label><br>
-                <input type="text" clas="form-control" value="Input a valid name..." id="user-inp">
-                <button type="button" class="btn" id="btn">Search</button>
+                <input type="text" clas="form-control" id="user-inp">
+                <button type="button" class="btn" id="btn">Search</button><br>
+
+                <!-- ALERT SOMETHING WENT WRONG -->
+                <div class="alert alert-danger alert-dismissible" id="alert-info-bad" hidden>
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    Please inut a valid name.
+                </div>
+
+                <!-- ALERT EVERYTHING WENT OK -->
+                <div class="alert alert-success alert-dismissible" id="alert-info-ok" hidden>
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    Success!
+                </div>
+                <hr>
+                <div>
+                    <p class="text-center" id="help">SEARCH SOMETHING, IT WILL APPEAR HERE.</p>
+                    <img src="#" class="img-circle" id="profile-pic">
+                    <p id="uname" hidden></p>
+                    <p id="name" hidden></p>
+                    <p id="follw" hidden></p>
+                    <p id="follwing" hidden></p>
+                    <table id="table" class="table" hidden>
+                        <thead>
+                            <tr>
+                                <th id="repo">Repository name</th>
+                                <th id="des">Description</th>
+                                <th id="lang">Language</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- CONTENT WILL APPEAR HERE -->
+                        </tbody>
+                    </table>
+                </div>
             </form>
         </div>
     </body>
