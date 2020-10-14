@@ -37,6 +37,11 @@ $(document).ready(function(){
                         repo=g.name;
                         des=g.description;
                         lang=g.language;
+
+                        if(des == null){
+                            des = "no description"
+                        }
+
                         prep = '<tr> <td> <a href="'+ g.html_url + '"</a>' + repo + "</td> <td>" + des + "</td> <td>" + lang + "</td> </tr>";
                         $("#table").append(prep);
                     })
